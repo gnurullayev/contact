@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <title>Todo list</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="bg-info bg-opacity-25 py-5">
+    <div class="container">
+        <h2 class="h1 text-info text-opacity-50 text-center">Ma'lumotlarni kiriting</h2>
+
+        <div class="row justify-content-between">
+            <div class="col-md-4">
+                <form class="form js-form">
+                    <label class="form-check-label mb-2 text-secondary fs-5 w-100" for="name">
+                        Ismi
+                        <input class="form-control js-name-input w-100" type="text" placeholder="Ismingizni kiriting" required>
+                    </label>
+
+                    <label class="form-check-label mb-2 text-secondary fs-5 w-100" for="name">
+                        Familiasi
+                        <input class="form-control js-lastname-input w-100" type="text" placeholder="Familiangizni kiriting" required>
+                    </label>
+
+                    <label class="form-check-label mb-2 text-secondary fs-5 w-100" for="name">
+                        Nomeri
+                        <input class="form-control js-phone-input w-100" type="number" placeholder="Telefon nomeri" required>
+                    </label>
+
+                    <button class="btn btn-success d-block mx-auto w-75 mt-3" type="submit">Yuborish</button>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <ul class="list-group content js-list">
+                    <!-- <li class="list-group-item list-group-item-info text-secondary d-flex justify-content-between align-items-center">
+                        <span class="name-span">G'ayrat</span>
+                        <span class="lastname-span">Nurullayev</span>
+                        <span class="realative-span">Amakim</span>
+                        <a class="phone-link" href="tel:+998901824946" >+998901824946</a>
+                        <button class="btn btn-danger">Delete</button>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
