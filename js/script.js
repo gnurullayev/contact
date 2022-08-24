@@ -45,7 +45,6 @@ elForm.addEventListener("submit",function (e) {
 })
 
 function deletItem(id) {
-    console.log(id);
     let deletTodos = todos.filter((item,i) => {
         return id !== i
     })
